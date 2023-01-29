@@ -1,0 +1,42 @@
+﻿    @model List<Bulky.Model.Category> 
+<div>
+        <div class="row mt-4 p-3">
+            <h2 class="col-10">Category</h2>
+            <a asp-controller="Category" asp-action="Create" class="col-2">
+                 <abbr class="btn btn-primary">Create new</abbr>
+            </a>
+        </div>
+        <div>
+            <table class="table table-bordered border-2">
+                <tr>
+                    <th>Name</th>
+                    <th>Date Create</th>
+                    <th>Display Order</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                
+                @{
+                    foreach(var item in Model){
+                                        <tr>
+                                            <td>
+                                                @item.Name
+                                            </td>
+                                            <td>
+                                                @item.DisplayOrder
+                                            </td>
+                                            <td>
+                                                @item.CreatedDate
+                                            </td>
+                                            <td>
+                                                <a class="btn btn-secondary" asp-controller="Category" asp-action="Edit" asp-route-id="@item.Id" >Edit</a>
+                                            </td>
+                                            <td>
+                                                <a class="btn btn-danger" asp-controller="Category" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                                            </td>
+                                        </tr>
+                    }
+                }
+            </table>
+        </div>
+</div>

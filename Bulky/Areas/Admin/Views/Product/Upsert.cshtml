@@ -1,0 +1,119 @@
+﻿@model ProductVM
+<form method="post" class="form-control mt-3 row" enctype="multipart/form-data" asp-action="Upsert">
+	<input hidden asp-for="product.UrlImage" />
+	<input hidden asp-for="product.Id" />
+	<div class="row">
+		<div class="col-10">
+				<div class="">
+				<h2 class="text-primary">@(Model.product.Id == 0 ? "Create" : "Update") Product</h2>
+					</div>
+			<hr /> 
+			<div class="table table-bordered border-2 row col-6">
+				<div class="p-2 col-12">
+					<label asp-for="product.Title" class="col-12">Title</label>
+					<input placeholder="Product Title" asp-for="product.Title" class="border border-2 col-10"/> <br />
+					<span asp-validation-for="product.Title" class="text-danger"></span>
+				</div>
+				<div class="p-2 col-12">
+					<label asp-for="@Model.product.Description" class="col-12" id="default-editor">Description</label>
+					<textarea placeholder="Description"  asp-for="@Model.product.Description" class="border border-2 col-10"></textarea>
+					<span asp-validation-for="@Model.product.Description" class="text-danger"></span>
+				</div>
+				<div class="p-2 col-6">
+					<label asp-for="@Model.product.Author" class="col-3">Author</label>
+					<input placeholder="Author" asp-for="@Model.product.Author" class="border border-2"/> <br />
+					<span asp-validation-for="@Model.product.Author" class="text-danger"></span>
+				</div>
+				<div class="p-2 col-6">
+					<label asp-for="@Model.product.ISBN" class="col-3">ISBN</label>
+					<input placeholder="ISBN" asp-for="@Model.product.ISBN" class="border border-2"/> <br />
+					<span asp-validation-for="@Model.product.ISBN" class="text-danger"></span>
+				</div>
+
+				<div class="p-2 col-6">
+					<label asp-for="@Model.product.ListPrice" class="col-3">ListPrice</label>
+					<input placeholder="ListPrice" asp-for="@Model.product.ListPrice" class="border border-2"/> <br />
+					<span asp-validation-for="@Model.product.ListPrice" class="text-danger"></span>
+				</div>
+				<div class="p-2 col-6">
+					<label asp-for="@Model.product.Price" class="col-3">Price</label>
+					<input placeholder="Price" asp-for="@Model.product.Price" class="border border-2"/> <br />
+					<span asp-validation-for="@Model.product.Price" class="text-danger"></span>
+				</div>
+				<div class="p-2 col-6">
+					<label asp-for="@Model.product.Price50" class="col-3">Price50</label>
+					<input placeholder="Price50" asp-for="@Model.product.Price50" class="border border-2"/> <br />
+					<span asp-validation-for="@Model.product.Price50" class="text-danger"></span>
+				</div>
+				<div class="p-2 col-6">
+					<label asp-for="@Model.product.Price100" class="col-3">Price100</label>
+					<input placeholder="Price100" asp-for="@Model.product.Price100" class="border border-2"/> <br />
+					<span asp-validation-for="@Model.product.Price100" class="text-danger"></span>
+				</div>
+				<div class="p-2	col-7">
+					<label class="col-1">Image</label>
+					<input type="file" id="imageBox" name="file" class="form-control"/>
+				</div>
+				<div class="p-2 col-6">
+					<label asp-for="@Model.product.CategoryId" class="col-3">Category</label>
+					<select asp-items=@Model.Category asp-for="@Model.product.CategoryId" class="form-select border-2"> 
+						<option disabled selected>--Select Category--</option>
+					</select><br />
+					<span asp-validation-for="@Model.product.CategoryId" class="text-danger"></span>
+				</div>
+				<div class="p-2 col-6">
+					<label asp-for="@Model.product.CoverTypeId" class="col-3">Cover Type</label>
+					<select asp-items=@Model.CoverType asp-for="@Model.product.CoverTypeId" class="form-select border-2"> 
+						<option disabled selected>--Select Cover Type--</option>
+					</select><br />
+					<span asp-validation-for="@Model.product.CoverTypeId" class="text-danger"></span>
+				</div>
+
+				<div>
+					@if (Model.product.Id == 0)
+					{
+								<button type="submit" onclick="return ValidateInput()" class="btn btn-success m-3">Create</button>
+					}
+					else
+					{
+								<button type="submit" class="btn btn-success m-3">Update</button>
+					}
+							<a class="btn btn-secondary m-2" asp-action="Index">Back to list</a>
+				</div>
+			</div>
+				</div>
+		<div class="col-2">
+			@{
+				string name = Model.product.UrlImage;
+			}
+			<img style="width:100%;" src="@name" />
+
+		</div>
+	</div>
+
+
+</form>
+
+@section Scripts{
+			<partial name="_ValidationScriptsPartial" />
+}
+
+<script>
+
+	function ValidateInput(){
+		if(document.getElementById("imageBox").value ==""){
+			Swal.fire({
+			  icon: 'error',
+			  title: 'Oops...',
+			  text: 'Image is required',
+			})
+			return false;
+		}
+		return true;
+	}
+</script>
+<script>
+	tinymce.init({
+		selector: 'textarea#default-editor'
+	});
+  </script>

@@ -1,0 +1,49 @@
+﻿@model Company;
+<form method="post" asp-action="Upsert">
+	<input hidden asp-for="Id" />
+	<div class="row container">
+		<div>
+			<h2>Company @((Model.Id == 0) ? "Create" : "Update")</h2>
+		</div>
+		<hr />
+		<div class="p-lg-2 col-5 row">
+			<label class="col-12">Name</label>
+			<input class="col-8" placeholder="Name" asp-for="Name"/>
+			<span asp-validation-for="Name" class="text-danger"></span>
+		</div>
+		<div class="p-lg-2 col-5 row">
+			<label class="col-12">Street Address</label>
+			<input class="col-8" placeholder="Street Address" asp-for="StreetAddress"/>
+			<span asp-validation-for="StreetAddress" class="text-danger"></span>
+		</div>
+		<div class="p-lg-2 col-5 row">
+			<label class="col-12">City</label>
+			<input class="col-8" placeholder="City" asp-for="City"/>
+			<span asp-validation-for="City" class="text-danger"></span>
+		</div>
+		<div class="p-lg-2 col-5 row">
+			<label class="col-12">State</label>
+			<input class="col-8" placeholder="State" asp-for="State"/>
+			<span asp-validation-for="State" class="text-danger"></span>
+		</div>
+		<div class="p-lg-2 col-5 row">
+			<label class="col-12">PostalCode</label>
+			<input class="col-8" placeholder="PostalCode" asp-for="PostalCode"/>
+			<span asp-validation-for="PostalCode" class="text-danger"></span>
+		</div>
+		<div class="p-lg-2 col-5 row">
+			<label class="col-12">Phone Number</label>
+			<input type="number" class="col-8" placeholder="Phone Number" asp-for="PhoneNumber"/>
+			<span asp-validation-for="PhoneNumber" class="text-danger"></span>
+		</div>
+		<div class="row p-lg-2 mt-lg-2">
+			<button class="btn btn-success col-2 m-3" type="submit" asp-action="Upsert">Create</button>
+				<a class="btn btn-outline-dark col-2 m-3" asp-action="Index">Back to list</a>
+			<span asp-validation-for="Name" class="text-danger"></span>
+		</div>
+	</div>
+</form>
+
+@section Scripts{
+	<partial name="_ValidationScriptsPartial" />
+}

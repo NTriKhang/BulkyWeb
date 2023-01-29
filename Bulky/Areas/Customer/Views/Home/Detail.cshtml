@@ -1,0 +1,64 @@
+﻿@model ShoppingCart2
+
+<form method="post" class="form-control" asp-action="Detail">
+	<input hidden asp-for="@Model.ProductId" />
+	<input hidden asp-for="@Model.ApplicationUserId" />
+	<div class="card container">
+		<div class="card-header bg-primary text-light m-lg-0 row">
+			<div class="col-10">
+				<h2 class="text-white-50">@Model.product.Title</h2>
+				<p class="text-warning">By Author @(Model.product.Author)</p>
+			</div>
+			<div class="col-2">
+				<p class="bg-info text-center mt-2">@(Model.product.Category.Name)</p>
+				<p class="bg-warning text-center">@(Model.product.CoverType.Name)</p>
+			</div>
+		</div>
+		<div class="card-body row">
+			<div class="col-8">
+				<div class="mt-2 p-3 col-12">
+					<p class="p-lg-2 text-uppercase">ISBN @Model.product.ISBN</p>	
+					<p class="p-lg-2">List Price: @Model.product.ListPrice</p>	
+				</div>
+				<div class="row">
+					<div class="col-2">
+						<p>Quantity</p>
+						<h3 class="text-success">Price</h3>
+					</div>
+					<div class="col-2">
+						<p>1-50</p>
+						<h3 class="text-success">@(Model.product.Price).000vnd</h3>
+					</div>
+					<div class="col-2">
+						<p>50-100</p>
+						<h3 class="text-success">@(Model.product.Price50).000vnd</h3>
+					</div>
+					<div class="col-2">
+						<p>100+</p>
+						<h3 class="text-success">@(Model.product.Price100).000vnd</h3>
+					</div>
+				</div>
+				<div class="p-2 row">
+					<p class="col-2">Decription</p>
+					<textarea class="col-10" rows="4">@Model.product.Description</textarea>
+				</div>
+				<div class="p-2 row">
+					<p class="col-2 text-black">Count</p>
+					<div class="col-10">
+						<input asp-for="Count" />
+					</div>
+				</div>
+			</div>
+			<div class="col-4">
+				@{
+					string url = Model.product.UrlImage;
+				}
+				<img src="@url" style="width:100%" />
+			</div>
+		<div class="m-lg-4 row">
+				<a class="col-4 btn btn-info text-center m-lg-4" asp-action="Index" asp-controller="Home">Back to List</a>
+				<button type="submit" class="btn btn-success col-4 m-lg-4" asp-action="Detail">Add to cart</button>
+			</div>
+		</div>
+	</div>
+</form>
