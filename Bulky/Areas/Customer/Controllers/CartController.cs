@@ -26,18 +26,25 @@ namespace Bulky.Areas.Customer.Controllers
 
 			List<CartVM> cartVMs= new List<CartVM>();
 			var shoppingCart = _unitofwork.shoppingCart.GetAll();
+			int price = 0;
+			int i = 0;
 			foreach(var shop in shoppingCart)
 			{
 				if(userId == shop.ApplicationUserId)
 				{
 					cartVMs.Add(new CartVM()
 					{
+						ApplicationUserId = userId,
 						shoppingCartId = shop.Id,
 						Products = _unitofwork.Product.GetFirstOrDefault(x => x.Id == shop.ProductId),
 						Count = shop.Count,
 					});
+					price += cartVMs[i].Count * cartVMs[i].Products.Price;
+					i++;
 				}
+
 			}
+			cartVMs[0].Total = price;
 			return View(cartVMs);
 		}
 
@@ -49,6 +56,35 @@ namespace Bulky.Areas.Customer.Controllers
 			_unitofwork.shoppingCart.Remove(obj);
 			_unitofwork.Save();
 			return Json(new {success = true});	
+		}
+		
+		public IActionResult Update(List<CartVM> shoppingCartObj)
+		{
+			
+			//if(ModelState.IsValid)
+			//{
+			//	for (int i = 0; i < shoppingCart2.Count; i++)
+			//	{
+			//		ShoppingCart2 tmp = _unitofwork.shoppingCart.GetFirstOrDefault(x => x.Id == shoppingCart2[i].shoppingCartId);
+			//		tmp.Count = shoppingCart2[i].Count;
+			//	}
+			//	_unitofwork.Save();
+			//	return RedirectToAction("index");
+			//}
+            if (ModelState.IsValid)
+            {
+                List<ShoppingCart2> obj = _unitofwork.shoppingCart.GetAll().Where(x => x.ApplicationUserId == shoppingCartObj[0].ApplicationUserId).ToList();
+                for (int i = 0; i < shoppingCartObj.Count; i++)
+                {
+					obj[i].Count = shoppingCartObj[i].Count;
+                }
+                _unitofwork.Save();
+                return RedirectToAction("index");
+            }
+            else
+			{
+				return View();
+			}
 		}
 	}
 }

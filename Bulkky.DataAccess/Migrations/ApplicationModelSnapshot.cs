@@ -37,7 +37,7 @@ namespace Bulky.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("categories");
+                    b.ToTable("categories", (string)null);
                 });
 
             modelBuilder.Entity("Bulky.Model.Company", b =>
@@ -72,7 +72,7 @@ namespace Bulky.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("companies");
+                    b.ToTable("companies", (string)null);
                 });
 
             modelBuilder.Entity("Bulky.Model.CoverType", b =>
@@ -87,7 +87,7 @@ namespace Bulky.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("coverTypes");
+                    b.ToTable("coverTypes", (string)null);
                 });
 
             modelBuilder.Entity("Bulky.Model.Product", b =>
@@ -139,7 +139,7 @@ namespace Bulky.Migrations
 
                     b.HasIndex("CoverTypeId");
 
-                    b.ToTable("products");
+                    b.ToTable("products", (string)null);
                 });
 
             modelBuilder.Entity("Bulky.Model.ShoppingCart2", b =>
@@ -161,7 +161,7 @@ namespace Bulky.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("shoppingCartsFixed");
+                    b.ToTable("shoppingCartsFixed", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
