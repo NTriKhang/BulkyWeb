@@ -3,6 +3,7 @@ using System;
 using Bulky.DataAccess;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Bulky.Migrations
 {
     [DbContext(typeof(Application))]
-    partial class ApplicationModelSnapshot : ModelSnapshot
+    [Migration("20230207150058_AddOrderHeaderAndOrderDetail")]
+    partial class AddOrderHeaderAndOrderDetail
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
