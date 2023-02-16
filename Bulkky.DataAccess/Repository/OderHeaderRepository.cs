@@ -28,5 +28,10 @@ namespace Bulky.DataAccess.Repository
                 obj.PaymentStatus = paymentStatus;
             }
         }
-    }
+		public void UpdateStripePaymentStatus(OrderHeader obj, string sessionId, string paymentIntendId)
+        {
+            obj.SessionId = sessionId;
+            obj.PaymentIntendId = paymentIntendId;
+        }
+	}
 }

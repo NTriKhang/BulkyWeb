@@ -11,11 +11,10 @@ namespace Bulky.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.AddColumn<int>(
-				name: "Count",
-				table: "shoppingCartsFixed",
-				type: "int",
-				nullable: false
-				);
+                name: "Count",
+                table: "shoppingCartsFixed",
+                type: "int",
+                nullable: false);
         }
 
         /// <inheritdoc />

@@ -6,6 +6,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Bulky.Utility;
+using Stripe;
 
 internal class Program
 {
@@ -19,8 +20,9 @@ internal class Program
         var connection = builder.Configuration.GetConnectionString("DefaultConnect");
         var serverVersion = new MySqlServerVersion(new Version(8, 0, 29));
 
-		builder.Services.AddDbContext<Application>(option => option.UseMySql(connection, serverVersion));
-        builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddDefaultTokenProviders().AddEntityFrameworkStores<Application>();
+        builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
+		builder.Services.AddDbContext<Bulky.DataAccess.Application>(option => option.UseMySql(connection, serverVersion));
+        builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddDefaultTokenProviders().AddEntityFrameworkStores<Bulky.DataAccess.Application>();
 		builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
         builder.Services.AddSingleton<IEmailSender, EmailSender>();
         builder.Services.AddRazorPages();
@@ -46,6 +48,7 @@ internal class Program
         app.UseStaticFiles();
 
         app.UseRouting();
+        StripeConfiguration.ApiKey = builder.Configuration.GetSection("Stripe:SecretKey").Get<string>();
 		app.UseAuthentication();
 		app.UseAuthorization();
 

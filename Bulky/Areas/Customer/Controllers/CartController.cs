@@ -44,7 +44,9 @@ namespace Bulky.Areas.Customer.Controllers
 				}
 
 			}
-			cartVMs[0].Total = price;
+			if (cartVMs.Count > 0)
+				cartVMs[0].Total = price;
+			
 			return View(cartVMs);
 		}
 

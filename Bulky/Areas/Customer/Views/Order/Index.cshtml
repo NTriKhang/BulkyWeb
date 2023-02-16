@@ -1,0 +1,112 @@
+﻿@model OrderVM
+@using Microsoft.Extensions.Options
+@inject IOptions<Bulky.Utility.StripeSettings> Stripe
+
+<form method="post" enctype="multipart/form-data">
+	<br />
+	<input hidden asp-for="@Model.orderHeader.OrderTotal" />
+	@{
+		for(int i = 0; i < Model.orderDetail.Count; i++)
+		{
+			<input hidden asp-for="@Model.orderDetail[i].ProductId">
+			<input hidden asp-for="@Model.orderDetail[i].Price">
+			<input hidden asp-for="@Model.orderDetail[i].Count">
+			<input hidden asp-for="@Model.cartId[i]">
+		}
+	}
+	<div class="container">
+		<div class="card">
+			<div class="card-header bg-dark text-light ml-0">
+				<div class=" row container">
+					<div class="col-6">
+						<i class="fa fa-shopping-cart"></i> &nbsp;
+						Order Summary
+					</div>
+					<div class="col-6 text-end">
+						<a asp-action="Index" class="btn btn-info btn-sm">Back to Cart</a>
+					</div>
+				</div>
+			</div>
+			<div class="card-body">
+				<div class="container rounded p-2">
+					<div class="row">
+						<div class="col-12 col-lg-6 pb-4">
+							<div class="row">
+								<h4 class="d-flex justify-content-between align-items-center mb-3">
+									<span class="text-info">Shipping Details:</span>
+								</h4>
+							</div>
+							<div class="row my-1">
+								<div class="col-3">
+									<label>Name</label>
+								</div>
+								<div class="col-9">
+									<input asp-for="@Model.orderHeader.Name" class="form-control" />
+									<span asp-validation-for="@Model.orderHeader.Name" class="text-danger"></span>
+								</div>
+							</div>
+							<div class="row my-1">
+								<div class="col-3">
+									<label>Phone</label>
+								</div>
+								<div class="col-9">
+									<input asp-for="@Model.orderHeader.PhoneNumber" class="form-control" />
+									<span asp-validation-for="@Model.orderHeader.PhoneNumber" class="text-danger"></span>
+								</div>
+							</div>
+							<div class="row my-1">
+								<div class="col-3">
+									<label>Street Address</label>
+								</div>
+								<div class="col-9">
+									<input asp-for="@Model.orderHeader.StreetAddress" class="form-control" />
+									<span asp-validation-for="@Model.orderHeader.StreetAddress" class="text-danger"></span>
+								</div>
+							</div>
+							<div class="row my-1">
+								<div class="col-3">
+									<label>City</label>
+								</div>
+								<div class="col-9">
+									<input asp-for="@Model.orderHeader.City" class="form-control" />
+									<span asp-validation-for="@Model.orderHeader.City" class="text-danger"></span>
+								</div>
+							</div>
+							<div class="row my-1">
+								<div class="col-3">
+									<label>State</label>
+								</div>
+								<div class="col-9">
+									<input asp-for="@Model.orderHeader.State" class="form-control" />
+									<span asp-validation-for="@Model.orderHeader.State" class="text-danger"></span>
+								</div>
+							</div>
+							<div class="row my-1">
+								<div class="col-3">
+									<label>Postal Code</label>
+								</div>
+								<div class="col-9">
+									<input asp-for="@Model.orderHeader.PostalCode" class="form-control" />
+									<span asp-validation-for="@Model.orderHeader.PostalCode" class="text-danger"></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="card-footer">
+				<div class="row">
+					<div class="col-12 col-md-8 pt-2">
+						<p style="color:maroon; font-size:14px;">Estimate Arrival Date:
+							@DateTime.Now.AddDays(7).ToShortDateString() - @DateTime.Now.AddDays(14).ToShortDateString()	
+						</p>
+					</div>
+					<div class="col-12 col-md-4">
+						<button type="submit" value="Place Order" class="btn btn-primary form-control" asp-action="PlaceOrder" asp-controller="Order">Place Order</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</form>
