@@ -24,15 +24,14 @@ namespace Bulky.DataAccess.Repository
         {
             dbSet.Add(entity);
         }
-
         public void AddRange(IEnumerable<T> entities)
         {
             dbSet.AddRange(entities);
         }
 
-        public IEnumerable<T> GetAll(string? includeProperty = null)
+        public IEnumerable<T> GetAll(Expression<Func<T,bool>>? expression = null,string? includeProperty = null)
         {
-            IQueryable<T> query = dbSet;
+            IQueryable<T> query = (expression == null) ? dbSet : dbSet.Where(expression);
             if(includeProperty != null)
             {
                 foreach(var includeProp in includeProperty.Split(","))

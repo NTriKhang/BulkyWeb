@@ -122,7 +122,7 @@ namespace Bulky.Areas.Customer.Controllers
 			_unitOfWork.OrderDetail.RemoveRange(orderDetails);
 			_unitOfWork.OrderHeader.Remove(orderHeader);
 			_unitOfWork.Save();
-			return RedirectToAction("Index");
+			return RedirectToAction("Index", "Cart");
 		}
 	}
 }
