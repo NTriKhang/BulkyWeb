@@ -1,10 +1,13 @@
 ﻿using Bulky.DataAccess.Repository.IRepository;
 using Bulky.Model;
+using Bulky.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Bulky.Areas.Admin.Controllers
 {
 	[Area("Admin")]
+	[Authorize(Roles = SD.RoleUserAdmin)]
 	public class CoverTypeController : Controller
     {
         private readonly IUnitOfWork _uniofwork;
@@ -12,7 +15,6 @@ namespace Bulky.Areas.Admin.Controllers
         {
             _uniofwork = uniofwork;
         }
-
         public IActionResult Index()
         {
             IEnumerable<CoverType> obj = _uniofwork.CoverType.GetAll();

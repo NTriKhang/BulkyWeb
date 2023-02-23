@@ -1,6 +1,8 @@
 ﻿using Bulky.DataAccess.Repository.IRepository;
 using Bulky.Model;
 using Bulky.Model.ViewMd;
+using Bulky.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.CodeAnalysis.Operations;
@@ -9,6 +11,7 @@ using NuGet.Packaging.Signing;
 namespace Bulky.Areas.Admin.Controllers
 {
 	[Area("Admin")]
+	[Authorize(Roles = SD.RoleUserAdmin)]
 	public class ProductController : Controller
 	{
 		private readonly IUnitOfWork _unitofwork;

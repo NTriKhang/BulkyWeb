@@ -1,0 +1,47 @@
+﻿@{
+	var status = Context.Request.Query["status"];
+	string pending = "text-primary";
+	string approve = "text-primary";
+	string process = "text-primary";
+	string all = "text-primary";
+	switch (status)
+	{
+		case "pending":
+			pending = "bg-dark text-white";
+			break;
+		case "approve":
+			approve = "bg-dark text-white";
+			break;
+		case "process":
+			process = "bg-dark text-white";
+			break;
+		default:
+			all = "bg-dark text-white";
+			break;
+	}
+}
+<div>
+		<div class="mt-4 p-3" style="text-align:right;">
+			<a class="btn border-secondary @pending" asp-action="Index" asp-route-status="pending">Pending</a>
+			<a class="btn border-secondary @approve" asp-action="Index" asp-route-status="approve">Approve</a>
+			<a class="btn border-secondary @process" asp-action="Index" asp-route-status="process">Process</a>
+			<a class="btn border-secondary @all" asp-action="Index" asp-route-status="all">All</a>
+		</div>
+		<div>
+			<table id="OrderMngTable" class="table table-bordered border-2 bg-opacity-25">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Payment Status</th>
+						<th>Order Date</th>
+						<th>Price</th>
+						<th></th>
+
+					</tr>
+				</thead>
+			</table>
+		</div>
+</div>
+@section Scripts{
+		<script src="~/js/OrderManagement.js"></script>
+}	

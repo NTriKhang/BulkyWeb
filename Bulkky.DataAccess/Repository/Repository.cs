@@ -31,7 +31,11 @@ namespace Bulky.DataAccess.Repository
 
         public IEnumerable<T> GetAll(Expression<Func<T,bool>>? expression = null,string? includeProperty = null)
         {
-            IQueryable<T> query = (expression == null) ? dbSet : dbSet.Where(expression);
+            IQueryable<T> query;
+            if (expression == null)
+                query = dbSet;
+            else
+                query = dbSet.Where(expression);
             if(includeProperty != null)
             {
                 foreach(var includeProp in includeProperty.Split(","))

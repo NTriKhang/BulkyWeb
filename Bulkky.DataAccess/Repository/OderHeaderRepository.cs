@@ -31,6 +31,7 @@ namespace Bulky.DataAccess.Repository
 		public void UpdateStripePaymentStatus(OrderHeader obj, string sessionId, string paymentIntendId)
         {
             obj.SessionId = sessionId;
+            obj.OrderDate = DateTime.Now;
             obj.PaymentIntendId = paymentIntendId;
         }
 	}

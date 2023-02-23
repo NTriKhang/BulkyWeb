@@ -22,7 +22,9 @@ namespace Bulky.Utility
 
         public const string PaymentStatusPending = "Pending";
         public const string PaymentStatusApprove = "Approve";
-        public const string PaymentStatusDelayApprove = "DelayApprove";
+        public const string PaymentStatusDelayApprove = "Process";
         public const string PaymentStatusRejected = "Rejected";
+
+        public const string CartSession = "CartSession";
 	}
 }
