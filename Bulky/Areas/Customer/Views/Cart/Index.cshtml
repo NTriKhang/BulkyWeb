@@ -119,12 +119,19 @@
                 }
             }
 
-            </div>
-            <div class="col-4">
-            @if(Model.Count > 0)
+        </div>
+        <div class="col-4">
+            @if (Model.Count > 0)
             {
-                    <button type="submit" class="btn btn-info" style="width:45%; height:100%" asp-action="Update" asp-controller="Cart"><h5>Update</h5></button>
-                    <button type="submit" class="btn btn-success" style="width:45%" asp-action="Index" asp-controller="Order"><h5>Order</h5></button>
+                <button type="submit" class="btn btn-info" style="width:45%; height:100%" asp-action="Update" asp-controller="Cart"><h5>Update</h5></button>
+                if (Model[0].emailcofirm == true)
+                {
+                    <button type="submit" class="btn btn-info" style="width:45%; height:100%" asp-action="Index" asp-controller="Order"><h5>Order</h5></button>
+                }
+                else
+                {
+                            <button class="btn btn-info" style="width:45%; height:100%" asp-action="SendEmail" asp-controller="Home"><h5>Order</h5></button>
+                }
             }
             </div>
         </div>

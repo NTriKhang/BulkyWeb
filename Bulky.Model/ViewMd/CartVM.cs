@@ -13,6 +13,7 @@ namespace Bulky.Model.ViewMd
 	public class CartVM
 	{
 		public string ApplicationUserId { get; set; }
+		public bool? emailcofirm { get; set; } = false;
 		public int shoppingCartId { get; set; }
 		[ValidateNever]
 		public Product Products { get; set; }

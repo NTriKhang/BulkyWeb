@@ -40,7 +40,13 @@ internal class Program
 			option.AccessDeniedPath = $"/Identity/Account/AccessDenied";
 		}
 		);
+		builder.Services.AddAuthentication().AddFacebook(option =>
+		{
+			option.AppId = "696804982126158";
 
+			option.AppSecret = "a2e91209f42c69ee4f4999db0a0ff5ef";
+
+        });
 		var app = builder.Build();
 
 		// Configure the HTTP request pipeline.

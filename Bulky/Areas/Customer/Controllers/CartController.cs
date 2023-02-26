@@ -45,8 +45,11 @@ namespace Bulky.Areas.Customer.Controllers
 
 			}
 			if (cartVMs.Count > 0)
+			{
 				cartVMs[0].Total = price;
-			
+				cartVMs[0].emailcofirm = _unitofwork.applicationUser.GetFirstOrDefault(x => x.Id == userId).EmailConfirmed;
+			}
+
 			return View(cartVMs);
 		}
 
