@@ -118,10 +118,6 @@ namespace Bulky.Areas.Identity.Pages.Account
 			public string PhoneNumber { get; set; } = "";
 			public string? Role { get; set; }
 			public int? CompanyId { get; set; }
-			[ValidateNever]
-			public IEnumerable<SelectListItem> RoleList { set; get; }
-			[ValidateNever]
-			public IEnumerable<SelectListItem> CompanyList { set; get; }
 
 		}
 
@@ -137,20 +133,7 @@ namespace Bulky.Areas.Identity.Pages.Account
 			}
 			ReturnUrl = returnUrl;
 			ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
-			Input = new InputModel()
-			{
-				RoleList = _roleManager.Roles.Where(x => x.Name != SD.RoleUserAdmin).Select(x => x.Name).Select(i => new SelectListItem()
-				{
-					Value = i,
-					Text = i
-				}),
-				CompanyList = _unitOfWork.Company.GetAll().Select(i => new SelectListItem()
-				{
-					Text = i.Name,
-					Value = i.Id.ToString()
-
-				}),
-			};
+			Input = new InputModel();
 
 		}
 

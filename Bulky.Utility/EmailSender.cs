@@ -28,7 +28,7 @@ namespace Bulky.Utility
 				}
 			}
 
-			msg.From = new MailAddress(mail, "Test");
+			msg.From = new MailAddress(mail, subject);
 			msg.Subject = subject;
 			msg.Body = htmlMessage;
 			msg.IsBodyHtml = true;

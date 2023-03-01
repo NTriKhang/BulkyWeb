@@ -20,7 +20,7 @@ namespace Bulky.Areas.Customer.Controllers
 		}
 		public IActionResult Index(List<CartVM> shoppingCartObj)
 		{
-            string UserID = shoppingCartObj[0].ApplicationUserId;
+            string UserID = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var currentUser = _unitOfWork.applicationUser.GetFirstOrDefault(user => user.Id == UserID);
 			OrderVM orderVM = new OrderVM()
 			{

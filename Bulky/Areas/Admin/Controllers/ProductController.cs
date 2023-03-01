@@ -11,8 +11,8 @@ using NuGet.Packaging.Signing;
 namespace Bulky.Areas.Admin.Controllers
 {
 	[Area("Admin")]
-	[Authorize(Roles = SD.RoleUserAdmin)]
-	public class ProductController : Controller
+    [Authorize(Roles = $"{SD.RoleUserAdmin},{SD.RoleUserEmp}")]
+    public class ProductController : Controller
 	{
 		private readonly IUnitOfWork _unitofwork;
 		private readonly IWebHostEnvironment _webHostEnvironment;

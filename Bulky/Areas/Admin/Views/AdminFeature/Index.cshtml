@@ -1,0 +1,44 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@model SignRoleVM
+@inject UserManager<IdentityUser> _usermanager
+<form enctype="multipart/form-data" method="post">
+	<div>
+        <div>
+            <table class="table table-bordered border-2">
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                </tr>
+                
+                @{
+                    for(int i = 0; i < Model.signRoles.Count;i++){
+                                        <tr>
+                                            <td width="30%">
+                                                <input hidden asp-for="@Model.signRoles[i].applicationUser.Id">
+                                                @Model.signRoles[i].applicationUser.Id
+                                            </td>
+                                            <td width="15%">
+                                                <input hidden asp-for="@Model.signRoles[i].applicationUser.Name">
+                                                @Model.signRoles[i].applicationUser.Name
+                                            </td>
+                                            <td width="20%">
+                                                <input hidden asp-for="@Model.signRoles[i].applicationUser.Email">
+                                                @Model.signRoles[i].applicationUser.Email
+                                            </td>
+                                            <td width="10%">
+                                                <select asp-items=@Model.roles asp-for="@Model.signRoles[i].specificRole" class="form-select border-2"> 
+						                            <option disabled selected>--Your Role--</option>
+					                            </select><br />
+					                            <span asp-validation-for="@Model.signRoles[i].specificRole" class="text-danger"></span>
+                                            </td>
+                                        </tr>
+                    }
+                }
+            </table>
+            <button type="submit" asp-action="SignRolePost" asp-controller="AdminFeature" class="btn btn-primary form-control">Save</button>
+        </div>
+
+    </div>
+</form>
