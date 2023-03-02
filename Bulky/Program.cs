@@ -45,6 +45,12 @@ internal class Program
 			option.AppId = "696804982126158";
 
 			option.AppSecret = "a2e91209f42c69ee4f4999db0a0ff5ef";
+        });
+		builder.Services.AddAuthentication().AddGoogle(option =>
+		{
+			option.ClientId = "209859043503-ohjavkf6q7adrp6e173db2errbremc0u.apps.googleusercontent.com";
+
+			option.ClientSecret = "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";
 
         });
 		var app = builder.Build();
