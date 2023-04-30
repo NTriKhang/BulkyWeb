@@ -8,14 +8,14 @@ namespace Bulky.DataAccess.Repository.IRepository
 {
     public interface IUnitOfWork
     {
-        ICategoryRepository Category { get; }
-        ICoverTypeRepository CoverType { get; }
-        IProductRepository Product { get; }
-        ICompanyRepository Company { get; }
-        IShoppingCartRepository shoppingCart { get; }
-        IOrderDetailRepository OrderDetail { get; }
-        IOrderHeaderRepository OrderHeader { get; }
-        IApplicationUserRepository applicationUser { get; }
+        public ICategoryRepository Category { get; }
+        public ICoverTypeRepository CoverType { get; }
+        public IProductRepository Product { get; }
+        public ICompanyRepository Company { get;}
+        public IShoppingCartRepository shoppingCart { get; }
+        public IOrderHeaderRepository OrderHeader { get; }
+        public IOrderDetailRepository OrderDetail { get;}
+        public IApplicationUserRepository applicationUser { get; }
         public void Save();
     }
 }

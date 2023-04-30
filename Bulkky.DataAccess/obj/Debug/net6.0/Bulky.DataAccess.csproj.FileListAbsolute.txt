@@ -1,0 +1,17 @@
+D:\FOR_CODE\c#\BulkyWeb\Bulkky.DataAccess\bin\Debug\net6.0\Bulky.DataAccess.deps.json
+D:\FOR_CODE\c#\BulkyWeb\Bulkky.DataAccess\bin\Debug\net6.0\Bulky.DataAccess.runtimeconfig.json
+D:\FOR_CODE\c#\BulkyWeb\Bulkky.DataAccess\bin\Debug\net6.0\Bulky.DataAccess.dll
+D:\FOR_CODE\c#\BulkyWeb\Bulkky.DataAccess\bin\Debug\net6.0\Bulky.DataAccess.pdb
+D:\FOR_CODE\c#\BulkyWeb\Bulkky.DataAccess\bin\Debug\net6.0\Bulky.Model.dll
+D:\FOR_CODE\c#\BulkyWeb\Bulkky.DataAccess\bin\Debug\net6.0\Bulky.Model.pdb
+D:\FOR_CODE\c#\BulkyWeb\Bulkky.DataAccess\obj\Debug\net6.0\Bulky.DataAccess.csproj.AssemblyReference.cache
+D:\FOR_CODE\c#\BulkyWeb\Bulkky.DataAccess\obj\Debug\net6.0\Bulky.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\FOR_CODE\c#\BulkyWeb\Bulkky.DataAccess\obj\Debug\net6.0\Bulky.DataAccess.AssemblyInfoInputs.cache
+D:\FOR_CODE\c#\BulkyWeb\Bulkky.DataAccess\obj\Debug\net6.0\Bulky.DataAccess.AssemblyInfo.cs
+D:\FOR_CODE\c#\BulkyWeb\Bulkky.DataAccess\obj\Debug\net6.0\Bulky.DataAccess.csproj.CoreCompileInputs.cache
+D:\FOR_CODE\c#\BulkyWeb\Bulkky.DataAccess\obj\Debug\net6.0\Bulky.DataAccess.csproj.CopyComplete
+D:\FOR_CODE\c#\BulkyWeb\Bulkky.DataAccess\obj\Debug\net6.0\Bulky.DataAccess.dll
+D:\FOR_CODE\c#\BulkyWeb\Bulkky.DataAccess\obj\Debug\net6.0\refint\Bulky.DataAccess.dll
+D:\FOR_CODE\c#\BulkyWeb\Bulkky.DataAccess\obj\Debug\net6.0\Bulky.DataAccess.pdb
+D:\FOR_CODE\c#\BulkyWeb\Bulkky.DataAccess\obj\Debug\net6.0\Bulky.DataAccess.genruntimeconfig.cache
+D:\FOR_CODE\c#\BulkyWeb\Bulkky.DataAccess\obj\Debug\net6.0\ref\Bulky.DataAccess.dll

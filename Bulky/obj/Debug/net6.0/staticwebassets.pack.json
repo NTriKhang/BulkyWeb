@@ -1,0 +1,321 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Bulky.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Bulky.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\css\\bootswatchcss.css",
+      "PackagePath": "staticwebassets\\css\\bootswatchcss.css"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\images\\products\\04c1b3c6-f5bb-491a-beed-70a733694815.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\04c1b3c6-f5bb-491a-beed-70a733694815.jpg"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\images\\products\\08210211-d4c5-4a94-82f2-ef030fceccf0.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\08210211-d4c5-4a94-82f2-ef030fceccf0.jpg"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\images\\products\\0d2292a0-a17b-4417-9e57-b3ec0435057f.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\0d2292a0-a17b-4417-9e57-b3ec0435057f.jpg"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\images\\products\\1d481a39-fdcb-4997-9a4a-d1d3efdd85a2.webp",
+      "PackagePath": "staticwebassets\\images\\products\\1d481a39-fdcb-4997-9a4a-d1d3efdd85a2.webp"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\images\\products\\3388bf72-80a6-4b4f-b221-4b0e22152509.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\3388bf72-80a6-4b4f-b221-4b0e22152509.jpg"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\images\\products\\4b27bc76-3b80-4a0e-be7a-9527113911ca.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\4b27bc76-3b80-4a0e-be7a-9527113911ca.jpg"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\images\\products\\4edbcc56-1547-417e-9d61-86f2c7d2145a.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\4edbcc56-1547-417e-9d61-86f2c7d2145a.jpg"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\images\\products\\735f9ed9-a4bf-4565-905c-c473596a2b57.jpg",
+      "PackagePath": "staticwebassets\\images\\products\\735f9ed9-a4bf-4565-905c-c473596a2b57.jpg"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\images\\products\\ca77f100-c6f8-413c-9bba-717b907218e5.png",
+      "PackagePath": "staticwebassets\\images\\products\\ca77f100-c6f8-413c-9bba-717b907218e5.png"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\images\\products\\e3969a5f-7ad3-4c73-bfee-37ccd970dc38.webp",
+      "PackagePath": "staticwebassets\\images\\products\\e3969a5f-7ad3-4c73-bfee-37ccd970dc38.webp"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\js\\Company.js",
+      "PackagePath": "staticwebassets\\js\\Company.js"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\js\\OrderManagement.js",
+      "PackagePath": "staticwebassets\\js\\OrderManagement.js"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\js\\Product.js",
+      "PackagePath": "staticwebassets\\js\\Product.js"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\FOR_CODE\\c#\\BulkyWeb\\Bulky\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Bulky.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Bulky.props",
+      "PackagePath": "build\\Bulky.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Bulky.props",
+      "PackagePath": "buildMultiTargeting\\Bulky.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Bulky.props",
+      "PackagePath": "buildTransitive\\Bulky.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
