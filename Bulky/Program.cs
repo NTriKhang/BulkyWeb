@@ -20,7 +20,6 @@ internal class Program
 		var connection = builder.Configuration.GetConnectionString("DefaultConnect");
 		var serverVersion = new MySqlServerVersion(new Version(8, 0, 29));
 
-		builder.Services.Configure<StripeSettings>(builder.Configuration.GetSection("Stripe"));
 		builder.Services.AddDbContext<Bulky.DataAccess.Application>(option => option.UseMySql(connection, serverVersion));
 		builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddDefaultTokenProviders().AddEntityFrameworkStores<Bulky.DataAccess.Application>();
 		builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
@@ -43,10 +42,14 @@ internal class Program
 		builder.Services.AddAuthentication().AddFacebook(option =>
 		{
 			option.AppId = "696804982126158";
-
 			option.AppSecret = "a2e91209f42c69ee4f4999db0a0ff5ef";
 
         });
+		builder.Services.AddAuthentication().AddGoogle(option =>
+		{
+			option.ClientId = builder.Configuration.GetSection("Google:ClientId").Get<string>();
+			option.ClientSecret = builder.Configuration.GetSection("Google:ClientSecret").Get<string>();
+		});
 		var app = builder.Build();
 
 		// Configure the HTTP request pipeline.
