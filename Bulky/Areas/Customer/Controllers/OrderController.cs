@@ -66,7 +66,7 @@ namespace Bulky.Areas.Customer.Controllers
 			var currentUser = _unitOfWork.applicationUser.GetFirstOrDefault(x => x.Id == orderVM.orderHeader.ApplicationUserId);
 			if(currentUser.CompanyId.GetValueOrDefault() == 0)
 			{
-				var domain = "https://localhost:44391/";
+				var domain = "https://localhost:7276/";
 				var options = new SessionCreateOptions
 				{
 					LineItems = new List<SessionLineItemOptions>(),
