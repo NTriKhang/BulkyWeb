@@ -41,8 +41,8 @@ internal class Program
 		);
 		builder.Services.AddAuthentication().AddFacebook(option =>
 		{
-			option.AppId = "696804982126158";
-			option.AppSecret = "a2e91209f42c69ee4f4999db0a0ff5ef";
+			option.AppId = builder.Configuration.GetSection("Facebook:AppId").Get<string>();
+			option.AppSecret = builder.Configuration.GetSection("Facebook:AppSecret").Get<string>();
 
         });
 		builder.Services.AddAuthentication().AddGoogle(option =>
