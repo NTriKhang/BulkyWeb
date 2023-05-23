@@ -32,6 +32,7 @@ internal class Program
 			option.Cookie.HttpOnly = true;
 			option.Cookie.IsEssential = true;
 		});
+		
 		builder.Services.ConfigureApplicationCookie(option =>
 		{
 			option.LoginPath = $"/Identity/Account/Login";
@@ -43,7 +44,6 @@ internal class Program
 		{
 			option.AppId = builder.Configuration.GetSection("Facebook:AppId").Get<string>();
 			option.AppSecret = builder.Configuration.GetSection("Facebook:AppSecret").Get<string>();
-
         });
 		builder.Services.AddAuthentication().AddGoogle(option =>
 		{
